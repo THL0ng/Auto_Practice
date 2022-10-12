@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="39350" started-at="2022-10-11T15:16:43Z" finished-at="2022-10-11T15:17:23Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="39350" started-at="2022-10-11T15:16:43Z" finished-at="2022-10-11T15:17:23Z">
+      <class name="webdriver_api.Topic_1">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:webdriver_api.Topic_1@174d20a]" name="beforeTest" is-config="true" duration-ms="1613" started-at="2022-10-11T22:16:43Z" finished-at="2022-10-11T22:16:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="TC_01_Login_Empty()[pri:0, instance:webdriver_api.Topic_1@174d20a]" name="TC_01_Login_Empty" duration-ms="8113" started-at="2022-10-11T22:16:45Z" finished-at="2022-10-11T22:16:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01_Login_Empty -->
+        <test-method status="PASS" signature="TC_02_Login_With_Email_Invalid()[pri:0, instance:webdriver_api.Topic_1@174d20a]" name="TC_02_Login_With_Email_Invalid" duration-ms="7751" started-at="2022-10-11T22:16:53Z" finished-at="2022-10-11T22:17:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_02_Login_With_Email_Invalid -->
+        <test-method status="PASS" signature="TC_03_Login_With_Password_Less_6Char()[pri:0, instance:webdriver_api.Topic_1@174d20a]" name="TC_03_Login_With_Password_Less_6Char" duration-ms="9912" started-at="2022-10-11T22:17:01Z" finished-at="2022-10-11T22:17:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_03_Login_With_Password_Less_6Char -->
+        <test-method status="PASS" signature="TC_04_Login_With_Password_Incorrect()[pri:0, instance:webdriver_api.Topic_1@174d20a]" name="TC_04_Login_With_Password_Incorrect" duration-ms="11574" started-at="2022-10-11T22:17:11Z" finished-at="2022-10-11T22:17:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_04_Login_With_Password_Incorrect -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:webdriver_api.Topic_1@174d20a]" name="afterTest" is-config="true" duration-ms="378" started-at="2022-10-11T22:17:22Z" finished-at="2022-10-11T22:17:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- webdriver_api.Topic_1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
