@@ -5,9 +5,9 @@
     <classes>
       <class name="webdriver_api.Topic_1">
         <methods>
-          <include name="TC_04_Login_With_Password_Incorrect"/>
           <include name="beforeTest"/>
           <include name="afterTest"/>
+          <include name="TC_06_Create_New_Account"/>
         </methods>
       </class> <!-- webdriver_api.Topic_1 -->
     </classes>
