@@ -14,6 +14,11 @@ import org.testng.annotations.AfterTest;
 
 public class Topic_1 {
 	WebDriver driver;
+	
+	public int random() {
+		Random rand = new Random();
+		return rand.nextInt(10000);
+	}
 
 	String Firstname = "automation";
 	String Lastname = "testing";
@@ -28,7 +33,7 @@ public class Topic_1 {
 
 	}
 
-	@Test
+	/*@Test
 	public void TC_01_Login_Empty() throws InterruptedException {
 		driver.get("http://live.techpanda.org/");
 
@@ -107,44 +112,49 @@ public class Topic_1 {
 	@Test
 	public void TC_05_Create_New_Account() throws InterruptedException {
 		driver.get("http://live.techpanda.org/");
-
-		driver.findElement(By.xpath("//div[@class='footer']//a[@title='My Account']")).click();
+		
+		driver.findElement(By.xpath("//div[@class='account-cart-wrapper']//span[text()='Account']")).click();
+		Thread.sleep(2000);
+		
+		
+		driver.findElement(By.xpath("//a[text()='Register']")).click();
 		Thread.sleep(2000);
 
-		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("");
+
+		driver.findElement(By.xpath("//input[@id='firstname']")).sendKeys(Firstname);
 		Thread.sleep(2000);
 
-		driver.findElement(By.xpath("//input[@id='pass']")).sendKeys("");
+		driver.findElement(By.xpath("//input[@id='lastname']")).sendKeys(Lastname);
 		Thread.sleep(2000);
-
-	}
+		
+		driver.findElement(By.xpath("//input[@id='email_address']")).sendKeys(ValidEmail);
+		Thread.sleep(2000);
+		
+		
+		driver.findElement(By.xpath("//input[@id='password']")).sendKeys(ValidPassword);
+		Thread.sleep(2000);
+		
+		driver.findElement(By.xpath("//input[@id='confirmation']")).sendKeys(ValidPassword);
+		Thread.sleep(2000);
+		
+		
+		driver.findElement(By.xpath("//div[@class='buttons-set']//button[@class='button']")).click();
+		Thread.sleep(2000);
+				
+	}*/
 	
-	
-
 	@Test
-	public void TC_06_Login_With_Vaild_Email_And_Password() throws InterruptedException {
-		driver.get("http://live.techpanda.org/");
-
-		driver.findElement(By.xpath("//div[@class='footer']//a[@title='My Account']")).click();
-		Thread.sleep(2000);
-
-		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("");
-		Thread.sleep(2000);
-
-		driver.findElement(By.xpath("//input[@id='pass']")).sendKeys("");
-		Thread.sleep(2000);
-
+	public void TC_06_Create_New_Account() throws InterruptedException {
+		driver.get("http://live.techpanda.org/index.php/mobile.html");
+		driver.findElement(By.xpath("//a[text()='IPhone']/parent::h2/following-sibling::div[@class='actions']//a[@class='link-compare']")).click();
+		
 	}
-
+	
+	
 	@AfterTest
 	public void afterTest() {
 		driver.quit();
-	}
-	
-	
-	public int random() {
-		Random rand = new Random();
-		return rand.nextInt(10000);
+		
 	}
 
 }
