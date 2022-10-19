@@ -33,7 +33,7 @@ public class Topic_1 {
 
 	}
 
-	/*@Test
+	@Test
 	public void TC_01_Login_Empty() throws InterruptedException {
 		driver.get("http://live.techpanda.org/");
 
@@ -141,14 +141,10 @@ public class Topic_1 {
 		driver.findElement(By.xpath("//div[@class='buttons-set']//button[@class='button']")).click();
 		Thread.sleep(2000);
 				
-	}*/
-	
-	@Test
-	public void TC_06_Create_New_Account() throws InterruptedException {
-		driver.get("http://live.techpanda.org/index.php/mobile.html");
-		driver.findElement(By.xpath("//a[text()='IPhone']/parent::h2/following-sibling::div[@class='actions']//a[@class='link-compare']")).click();
-		
 	}
+	
+	
+
 	
 	
 	@AfterTest
