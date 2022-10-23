@@ -2,36 +2,36 @@
 <testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="31272" started-at="2022-10-19T13:49:48Z" finished-at="2022-10-19T13:50:19Z">
+  <suite name="Default suite" duration-ms="12694" started-at="2022-10-23T14:36:29Z" finished-at="2022-10-23T14:36:42Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="31272" started-at="2022-10-19T13:49:48Z" finished-at="2022-10-19T13:50:19Z">
-      <class name="webdriver_api.Topic_2_Selenium_API_Commands">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:webdriver_api.Topic_2_Selenium_API_Commands@174d20a]" name="beforeTest" is-config="true" duration-ms="2222" started-at="2022-10-19T20:49:48Z" finished-at="2022-10-19T20:49:50Z">
+    <test name="Default test" duration-ms="12694" started-at="2022-10-23T14:36:29Z" finished-at="2022-10-23T14:36:42Z">
+      <class name="webdriver_api.Topic_4_Textbox_Textarea_DropdownList">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:webdriver_api.Topic_4_Textbox_Textarea_DropdownList@56f4468b]" name="beforeTest" is-config="true" duration-ms="8945" started-at="2022-10-23T21:36:29Z" finished-at="2022-10-23T21:36:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="TC_01_Veryfy_URL()[pri:0, instance:webdriver_api.Topic_2_Selenium_API_Commands@174d20a]" name="TC_01_Veryfy_URL" duration-ms="6548" started-at="2022-10-19T20:49:50Z" finished-at="2022-10-19T20:49:56Z">
+        <test-method status="PASS" signature="TC_01_New_Customer()[pri:0, instance:webdriver_api.Topic_4_Textbox_Textarea_DropdownList@56f4468b]" name="TC_01_New_Customer" duration-ms="3735" started-at="2022-10-23T21:36:38Z" finished-at="2022-10-23T21:36:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_01_Veryfy_URL -->
-        <test-method status="PASS" signature="TC_02_Veryfy_Title()[pri:0, instance:webdriver_api.Topic_2_Selenium_API_Commands@174d20a]" name="TC_02_Veryfy_Title" duration-ms="6796" started-at="2022-10-19T20:49:56Z" finished-at="2022-10-19T20:50:03Z">
+        </test-method> <!-- TC_01_New_Customer -->
+        <test-method status="PASS" signature="TC_02_()[pri:0, instance:webdriver_api.Topic_4_Textbox_Textarea_DropdownList@56f4468b]" name="TC_02_" duration-ms="0" started-at="2022-10-23T21:36:42Z" finished-at="2022-10-23T21:36:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_02_Veryfy_Title -->
-        <test-method status="PASS" signature="TC_03_Navigate_function()[pri:0, instance:webdriver_api.Topic_2_Selenium_API_Commands@174d20a]" name="TC_03_Navigate_function" duration-ms="8418" started-at="2022-10-19T20:50:03Z" finished-at="2022-10-19T20:50:12Z">
+        </test-method> <!-- TC_02_ -->
+        <test-method status="PASS" signature="TC_03_()[pri:0, instance:webdriver_api.Topic_4_Textbox_Textarea_DropdownList@56f4468b]" name="TC_03_" duration-ms="0" started-at="2022-10-23T21:36:42Z" finished-at="2022-10-23T21:36:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_03_Navigate_function -->
-        <test-method status="PASS" signature="TC_04_Get_PageSource_Code()[pri:0, instance:webdriver_api.Topic_2_Selenium_API_Commands@174d20a]" name="TC_04_Get_PageSource_Code" duration-ms="6957" started-at="2022-10-19T20:50:12Z" finished-at="2022-10-19T20:50:19Z">
+        </test-method> <!-- TC_03_ -->
+        <test-method status="PASS" signature="TC_04_()[pri:0, instance:webdriver_api.Topic_4_Textbox_Textarea_DropdownList@56f4468b]" name="TC_04_" duration-ms="1" started-at="2022-10-23T21:36:42Z" finished-at="2022-10-23T21:36:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_04_Get_PageSource_Code -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:webdriver_api.Topic_2_Selenium_API_Commands@174d20a]" name="afterTest" is-config="true" duration-ms="316" started-at="2022-10-19T20:50:19Z" finished-at="2022-10-19T20:50:19Z">
+        </test-method> <!-- TC_04_ -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:webdriver_api.Topic_4_Textbox_Textarea_DropdownList@56f4468b]" name="afterTest" is-config="true" duration-ms="0" started-at="2022-10-23T21:36:42Z" finished-at="2022-10-23T21:36:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- webdriver_api.Topic_2_Selenium_API_Commands -->
+      </class> <!-- webdriver_api.Topic_4_Textbox_Textarea_DropdownList -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
