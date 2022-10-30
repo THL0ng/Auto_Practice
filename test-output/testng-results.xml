@@ -1,102 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="4" passed="3">
+<testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="62491" started-at="2022-10-30T12:54:07Z" finished-at="2022-10-30T12:55:10Z">
+  <suite name="Default suite" duration-ms="46804" started-at="2022-10-30T14:23:42Z" finished-at="2022-10-30T14:24:29Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="62491" started-at="2022-10-30T12:54:07Z" finished-at="2022-10-30T12:55:10Z">
+    <test name="Default test" duration-ms="46804" started-at="2022-10-30T14:23:42Z" finished-at="2022-10-30T14:24:29Z">
       <class name="webdriver_api.Topic_5_DropdownList">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:webdriver_api.Topic_5_DropdownList@3a82f6ef]" name="beforeTest" is-config="true" duration-ms="3104" started-at="2022-10-30T19:54:07Z" finished-at="2022-10-30T19:54:10Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:webdriver_api.Topic_5_DropdownList@3a82f6ef]" name="beforeTest" is-config="true" duration-ms="3610" started-at="2022-10-30T21:23:42Z" finished-at="2022-10-30T21:23:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="TC_01_Default_DropdownList()[pri:0, instance:webdriver_api.Topic_5_DropdownList@3a82f6ef]" name="TC_01_Default_DropdownList" duration-ms="12015" started-at="2022-10-30T19:54:10Z" finished-at="2022-10-30T19:54:23Z">
+        <test-method status="PASS" signature="TC_01_Default_DropdownList()[pri:0, instance:webdriver_api.Topic_5_DropdownList@3a82f6ef]" name="TC_01_Default_DropdownList" duration-ms="12542" started-at="2022-10-30T21:23:46Z" finished-at="2022-10-30T21:23:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_01_Default_DropdownList -->
-        <test-method status="PASS" signature="TC_02_Custom_DropdownList_JQUERY()[pri:0, instance:webdriver_api.Topic_5_DropdownList@3a82f6ef]" name="TC_02_Custom_DropdownList_JQUERY" duration-ms="3236" started-at="2022-10-30T19:54:23Z" finished-at="2022-10-30T19:54:26Z">
+        <test-method status="PASS" signature="TC_02_Custom_DropdownList_JQUERY()[pri:0, instance:webdriver_api.Topic_5_DropdownList@3a82f6ef]" name="TC_02_Custom_DropdownList_JQUERY" duration-ms="3032" started-at="2022-10-30T21:23:58Z" finished-at="2022-10-30T21:24:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_02_Custom_DropdownList_JQUERY -->
-        <test-method status="PASS" signature="TC_03_Custom_DropdownList_JQUERY()[pri:0, instance:webdriver_api.Topic_5_DropdownList@3a82f6ef]" name="TC_03_Custom_DropdownList_JQUERY" duration-ms="7167" started-at="2022-10-30T19:54:26Z" finished-at="2022-10-30T19:54:33Z">
+        <test-method status="PASS" signature="TC_03_Custom_DropdownList_JQUERY()[pri:0, instance:webdriver_api.Topic_5_DropdownList@3a82f6ef]" name="TC_03_Custom_DropdownList_JQUERY" duration-ms="7376" started-at="2022-10-30T21:24:01Z" finished-at="2022-10-30T21:24:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_03_Custom_DropdownList_JQUERY -->
-        <test-method status="FAIL" signature="TC_04_Custom_DropdownList_REACT()[pri:0, instance:webdriver_api.Topic_5_DropdownList@3a82f6ef]" name="TC_04_Custom_DropdownList_REACT" duration-ms="36933" started-at="2022-10-30T19:54:33Z" finished-at="2022-10-30T19:55:10Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: {"method":"xpath","selector":"//h3[@id='selection']/ancestor::div[@class='equal width row']/following-sibling::div//div[@role='listbox']/div[@class='text' and text()= 'Christian']"}
-Command duration or timeout: 30.27 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'DESKTOP-EU216N6', ip: '192.168.4.27', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: df50d32f-21f1-4c9d-9e7a-a4997423065a
-*** Element info: {Using=xpath, value=//h3[@id='selection']/ancestor::div[@class='equal width row']/following-sibling::div//div[@role='listbox']/div[@class='text' and text()= 'Christian']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//h3[@id='selection']/ancestor::div[@class='equal width row']/following-sibling::div//div[@role='listbox']/div[@class='text' and text()= 'Christian']"}
-Command duration or timeout: 30.27 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'DESKTOP-EU216N6', ip: '192.168.4.27', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: df50d32f-21f1-4c9d-9e7a-a4997423065a
-*** Element info: {Using=xpath, value=//h3[@id='selection']/ancestor::div[@class='equal width row']/following-sibling::div//div[@role='listbox']/div[@class='text' and text()= 'Christian']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at webdriver_api.Topic_5_DropdownList.isElementDisplayed(Topic_5_DropdownList.java:191)
-	at webdriver_api.Topic_5_DropdownList.TC_04_Custom_DropdownList_REACT(Topic_5_DropdownList.java:208)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//h3[@id='selection']/ancestor::div[@class='equal width row']/following-sibling::div//div[@role='listbox']/div[@class='text' and text()= 'Christian']"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'DESKTOP-EU216N6', ip: '192.168.4.27', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/ADMIN/AppData/Local/Temp/anonymous7289934475162694149webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/ADMIN/AppData/Local/Temp/anonymous7289934475162694149webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="TC_04_Custom_DropdownList_REACT()[pri:0, instance:webdriver_api.Topic_5_DropdownList@3a82f6ef]" name="TC_04_Custom_DropdownList_REACT" duration-ms="17446" started-at="2022-10-30T21:24:09Z" finished-at="2022-10-30T21:24:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_04_Custom_DropdownList_REACT -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:webdriver_api.Topic_5_DropdownList@3a82f6ef]" name="afterTest" is-config="true" duration-ms="0" started-at="2022-10-30T19:55:10Z" finished-at="2022-10-30T19:55:10Z">
+        <test-method status="PASS" signature="TC_05_Custom_DropdownList_EDIABLE()[pri:0, instance:webdriver_api.Topic_5_DropdownList@3a82f6ef]" name="TC_05_Custom_DropdownList_EDIABLE" duration-ms="2778" started-at="2022-10-30T21:24:26Z" finished-at="2022-10-30T21:24:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_05_Custom_DropdownList_EDIABLE -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:webdriver_api.Topic_5_DropdownList@3a82f6ef]" name="afterTest" is-config="true" duration-ms="0" started-at="2022-10-30T21:24:29Z" finished-at="2022-10-30T21:24:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

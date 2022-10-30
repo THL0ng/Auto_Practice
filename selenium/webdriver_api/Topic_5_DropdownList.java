@@ -6,14 +6,17 @@ import org.testng.annotations.BeforeTest;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
+import java.awt.RenderingHints.Key;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -24,12 +27,15 @@ public class Topic_5_DropdownList {
 	WebDriver driver;
 	Select select;
 	
+	Actions action;
+	
 	WebDriverWait waitExplicit;
 	By numberAllItems = By.xpath("//ul[@id='number-menu']//li");
 	
 	@BeforeTest
 	public void beforeTest() {
 		driver = new FirefoxDriver();
+		action = new Actions(driver);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 			
@@ -205,13 +211,41 @@ public class Topic_5_DropdownList {
 		
 		// CLICK VÀO CHRISTIAN VÀ KIỂM TRA NÓ ĐÃ ĐƯỢC CHỌN THÀNH CÔNG
 		selectItemInCustomDropdown("//h3[@id='selection']/ancestor::div[@class='equal width row']/following-sibling::div//div[@role='listbox']/i" , "//h3[@id='selection']/ancestor::div[@class='equal width row']/following-sibling::div//div[@role='listbox']//div[@role='option']/span" , "Christian");	
-		Assert.assertTrue(isElementDisplayed("//h3[@id='selection']/ancestor::div[@class='equal width row']/following-sibling::div//div[@role='listbox']/div[@class='text' and text()= 'Christian']"));	
-
+		Assert.assertTrue(isElementDisplayed("//h3[@id='selection']/ancestor::div[@class='equal width row']/following-sibling::div//div[@role='listbox']//div[text()='Christian']"));	
+		Thread.sleep(2000);
 		
 		// CLICK VÀO JENNY HESS VÀ KIỂM TRA NÓ ĐÃ ĐƯỢC CHỌN THÀNH CÔNG
 		selectItemInCustomDropdown("//h3[@id='selection']/ancestor::div[@class='equal width row']/following-sibling::div//div[@role='listbox']/i" , "//h3[@id='selection']/ancestor::div[@class='equal width row']/following-sibling::div//div[@role='listbox']//div[@role='option']/span" , "Jenny Hess");	
-		Assert.assertTrue(isElementDisplayed("//h3[@id='selection']/ancestor::div[@class='equal width row']/following-sibling::div//div[@role='listbox']/div[@class='text' and text()= 'Jenny Hess']"));
+		Assert.assertTrue(isElementDisplayed("//h3[@id='selection']/ancestor::div[@class='equal width row']/following-sibling::div//div[@role='listbox']//div[text()='Jenny Hess']"));
+		Thread.sleep(2000);
+
 	}
+	
+
+	
+	@Test
+	public void TC_05_Custom_DropdownList_EDIABLE() throws InterruptedException {
+		driver.get("https://react.semantic-ui.com/maximize/dropdown-example-search-selection/");
+		
+		inputItemInCustomDropdown("//div[contains(@class,'search selection')]//i[@class='dropdown icon']" , "//input[@class= 'search']", "American Samoa");	
+		Assert.assertTrue(isElementDisplayed("//div[contains(@class, 'search selection')]/div[text()='American Samoa']"));	
+				
+	}
+	
+	public void inputItemInCustomDropdown(String parentXpath, String inputXpath, String expectedText) {
+		// 1- CLICK VÀO THẺ CHỨA DROPDOWN LIST ĐỂ NÓ XỔ RA HẾT ITEMS
+		driver.findElement(By.xpath(parentXpath)).click();
+		
+		
+		// 2- INPUT TEXT VÀO TEXTBOX 
+		driver.findElement(By.xpath(inputXpath)).sendKeys(expectedText);
+		
+		
+		// 3- TRUYỀN PHÍM ENTER VÀO INPUT TEXT
+		action.sendKeys(driver.findElement(By.xpath(inputXpath)), Keys.ENTER).perform();
+
+	}
+	
 
 	@AfterTest
 	public void afterTest() {
