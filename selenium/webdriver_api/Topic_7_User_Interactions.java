@@ -1,6 +1,9 @@
 package webdriver_api;
 
 import org.testng.annotations.Test;
+
+import com.thoughtworks.selenium.webdriven.commands.GetText;
+
 import org.testng.annotations.BeforeTest;
 
 import java.util.List;
@@ -10,6 +13,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
@@ -27,6 +31,13 @@ public class Topic_7_User_Interactions {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		
+		
+		
+		String projectPath = System.getProperty("user.dir");
+		System.setProperty("webdriver.chrome.driver", projectPath + "\\lib\\chromedriver.exe");
+		driver = new ChromeDriver();
+				
+		System.out.println(driver.toString());	
 		action = new Actions(driver);
 
 	}
@@ -37,18 +48,21 @@ public class Topic_7_User_Interactions {
 		driver.get("https://www.myntra.com/");
 		
 		action.moveToElement(driver.findElement(By.xpath("//div[@class='desktop-navLink']/a[text()='Men']"))).perform();
+		Thread.sleep(2000);
 		
 		driver.findElement(By.xpath("//a[@class='desktop-categoryLink' and text()='Casual Shirts']")).click();
-		
-		Assert.assertTrue(driver.findElement(By.xpath("//h1[@class='title-title' and text()='men casual shirts']")).isDisplayed());
-			
+		Thread.sleep(2000);
+
+		Assert.assertTrue(driver.findElement(By.xpath("//h1[@class='title-title' and text()='Casual Shirts for Men']")).isDisplayed());
+		Thread.sleep(2000);
+	
 	}
 	
 	
 	@Test
 	public void TC_02_Click_And_Hold() throws InterruptedException {
 		
-		driver.findElement(By.xpath("https://automationfc.github.io/jquery-selectable/"));
+		driver.get("https://automationfc.github.io/jquery-selectable/");
 		
 		List <WebElement> numbers = driver.findElements(By.xpath("//ol[@id='selectable']/li")); 
 		
@@ -73,7 +87,7 @@ public class Topic_7_User_Interactions {
 	
 	@Test
 	public void TC_03_Click_And_Hold_Random() throws InterruptedException {
-		driver.findElement(By.xpath("https://automationfc.github.io/jquery-selectable/"));
+		driver.get("https://automationfc.github.io/jquery-selectable/");
 		
 		List <WebElement> numbers = driver.findElements(By.xpath("//ol[@id='selectable']/li")); 
 		
@@ -126,13 +140,13 @@ public class Topic_7_User_Interactions {
 		
 		action.contextClick(findByXpath("//span[text()='right click me']")).perform();
 		
-		action.moveToElement(findByXpath("//span[tetx()='Quit")).perform();
+		action.moveToElement(findByXpath("//span[text()='Quit']")).perform();
 		
-		Assert.assertTrue(findByXpath("//[contains(@class,'context-menu-visible') and contains(@class,'context-menu-hover')]/span[text()='Quit']").isDisplayed());
+		Assert.assertTrue(findByXpath("//li[contains(@class,'context-menu-visible') and contains(@class,'context-menu-hover')]/span[text()='Quit']").isDisplayed());
 		
 		action.click(findByXpath("//span[text()='Quit']")).perform();
 		
-		Assert.assertEquals(driver.switchTo().alert(), "clicked: quit");
+		Assert.assertEquals(driver.switchTo().alert().getText(), "clicked: quit");
 		
 		driver.switchTo().alert().accept();
 	}
@@ -150,7 +164,7 @@ public class Topic_7_User_Interactions {
 		
 		action.dragAndDrop(sourceCircle, targetCircle).perform();
 		
-		Assert.assertTrue(findByXpath("//div[@id='droptarget' and text()='You did great']").isDisplayed());
+		Assert.assertTrue(findByXpath("//div[@id='droptarget' and text()='You did great!']").isDisplayed());
 
 		
 	}
