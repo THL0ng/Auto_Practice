@@ -1,41 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="46804" started-at="2022-10-30T14:23:42Z" finished-at="2022-10-30T14:24:29Z">
+  <suite name="Default suite" duration-ms="4442" started-at="2022-11-06T03:52:16Z" finished-at="2022-11-06T03:52:21Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="46804" started-at="2022-10-30T14:23:42Z" finished-at="2022-10-30T14:24:29Z">
-      <class name="webdriver_api.Topic_5_DropdownList">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:webdriver_api.Topic_5_DropdownList@3a82f6ef]" name="beforeTest" is-config="true" duration-ms="3610" started-at="2022-10-30T21:23:42Z" finished-at="2022-10-30T21:23:46Z">
+    <test name="Default test" duration-ms="4442" started-at="2022-11-06T03:52:16Z" finished-at="2022-11-06T03:52:21Z">
+      <class name="webdriver_api.Topic_6_Button_Radio_Checkbox_Alert_Exercise">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:webdriver_api.Topic_6_Button_Radio_Checkbox_Alert_Exercise@174d20a]" name="beforeTest" is-config="true" duration-ms="1752" started-at="2022-11-06T10:52:16Z" finished-at="2022-11-06T10:52:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="TC_01_Default_DropdownList()[pri:0, instance:webdriver_api.Topic_5_DropdownList@3a82f6ef]" name="TC_01_Default_DropdownList" duration-ms="12542" started-at="2022-10-30T21:23:46Z" finished-at="2022-10-30T21:23:58Z">
+        <test-method status="PASS" signature="TC_04_Default_Checkbox_RadioButton()[pri:0, instance:webdriver_api.Topic_6_Button_Radio_Checkbox_Alert_Exercise@174d20a]" name="TC_04_Default_Checkbox_RadioButton" duration-ms="2683" started-at="2022-11-06T10:52:18Z" finished-at="2022-11-06T10:52:21Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_01_Default_DropdownList -->
-        <test-method status="PASS" signature="TC_02_Custom_DropdownList_JQUERY()[pri:0, instance:webdriver_api.Topic_5_DropdownList@3a82f6ef]" name="TC_02_Custom_DropdownList_JQUERY" duration-ms="3032" started-at="2022-10-30T21:23:58Z" finished-at="2022-10-30T21:24:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_02_Custom_DropdownList_JQUERY -->
-        <test-method status="PASS" signature="TC_03_Custom_DropdownList_JQUERY()[pri:0, instance:webdriver_api.Topic_5_DropdownList@3a82f6ef]" name="TC_03_Custom_DropdownList_JQUERY" duration-ms="7376" started-at="2022-10-30T21:24:01Z" finished-at="2022-10-30T21:24:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_03_Custom_DropdownList_JQUERY -->
-        <test-method status="PASS" signature="TC_04_Custom_DropdownList_REACT()[pri:0, instance:webdriver_api.Topic_5_DropdownList@3a82f6ef]" name="TC_04_Custom_DropdownList_REACT" duration-ms="17446" started-at="2022-10-30T21:24:09Z" finished-at="2022-10-30T21:24:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_04_Custom_DropdownList_REACT -->
-        <test-method status="PASS" signature="TC_05_Custom_DropdownList_EDIABLE()[pri:0, instance:webdriver_api.Topic_5_DropdownList@3a82f6ef]" name="TC_05_Custom_DropdownList_EDIABLE" duration-ms="2778" started-at="2022-10-30T21:24:26Z" finished-at="2022-10-30T21:24:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_05_Custom_DropdownList_EDIABLE -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:webdriver_api.Topic_5_DropdownList@3a82f6ef]" name="afterTest" is-config="true" duration-ms="0" started-at="2022-10-30T21:24:29Z" finished-at="2022-10-30T21:24:29Z">
+        </test-method> <!-- TC_04_Default_Checkbox_RadioButton -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:webdriver_api.Topic_6_Button_Radio_Checkbox_Alert_Exercise@174d20a]" name="afterTest" is-config="true" duration-ms="0" started-at="2022-11-06T10:52:21Z" finished-at="2022-11-06T10:52:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- webdriver_api.Topic_5_DropdownList -->
+      </class> <!-- webdriver_api.Topic_6_Button_Radio_Checkbox_Alert_Exercise -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

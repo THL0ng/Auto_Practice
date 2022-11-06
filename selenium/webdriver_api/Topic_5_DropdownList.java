@@ -219,6 +219,15 @@ public class Topic_5_DropdownList {
 		Assert.assertTrue(isElementDisplayed("//h3[@id='selection']/ancestor::div[@class='equal width row']/following-sibling::div//div[@role='listbox']//div[text()='Jenny Hess']"));
 		Thread.sleep(2000);
 
+		
+		
+		// // CLICK VÀO Stevie Feliciano VÀ KIỂM TRA NÓ ĐÃ ĐƯỢC CHỌN THÀNH CÔNG
+		selectItemInCustomDropdown("//div[@id='types-selection']//i[@class='dropdown icon']" , "//div[@class='visible menu transition']/div" , "Stevie Feliciano");	
+		Assert.assertTrue(isElementDisplayed("//div[@class='divider text' and text()='Stevie Feliciano']"));
+		Thread.sleep(2000);
+
+		
+		
 	}
 	
 

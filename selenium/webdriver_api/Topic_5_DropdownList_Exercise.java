@@ -14,7 +14,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 
@@ -33,6 +35,9 @@ public class Topic_5_DropdownList_Exercise {
 		return rand.nextInt(10000);
 	}
 	 
+	WebDriverWait waitExplicit;
+
+	By numberItems = By.xpath("//li[@class='ui-menu-item']/div");
 	
 	@BeforeTest
 	public void beforeTest() {
@@ -103,20 +108,14 @@ public class Topic_5_DropdownList_Exercise {
 		
 		driver.findElement(By.xpath("//a[text()='My account']")).click();
 		
-		
-		
-		
-		
-		
 
 	}
 
 	@Test
-	public void TC_02_Edit_Customer() {
-
+	public void TC_02_Customer_DropdownList() {
 		
-
 	}
+	
 
 
 
