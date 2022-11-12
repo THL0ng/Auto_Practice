@@ -1,45 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="44159" started-at="2022-11-06T14:50:07Z" finished-at="2022-11-06T14:50:51Z">
+  <suite name="Default suite" duration-ms="8463" started-at="2022-11-12T14:19:49Z" finished-at="2022-11-12T14:19:58Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="44159" started-at="2022-11-06T14:50:07Z" finished-at="2022-11-06T14:50:51Z">
-      <class name="webdriver_api.Topic_7_User_Interactions">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:webdriver_api.Topic_7_User_Interactions@4de8b406]" name="beforeTest" is-config="true" duration-ms="3168" started-at="2022-11-06T21:50:07Z" finished-at="2022-11-06T21:50:10Z">
+    <test name="Default test" duration-ms="8463" started-at="2022-11-12T14:19:49Z" finished-at="2022-11-12T14:19:58Z">
+      <class name="webdriver_api.Topic_8_Window_Tab">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:webdriver_api.Topic_8_Window_Tab@174d20a]" name="beforeTest" is-config="true" duration-ms="2249" started-at="2022-11-12T21:19:49Z" finished-at="2022-11-12T21:19:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="TC_01_Hover_Move_Mouse()[pri:0, instance:webdriver_api.Topic_7_User_Interactions@4de8b406]" name="TC_01_Hover_Move_Mouse" duration-ms="14132" started-at="2022-11-06T21:50:10Z" finished-at="2022-11-06T21:50:24Z">
+        <test-method status="PASS" signature="TC_01_Window()[pri:0, instance:webdriver_api.Topic_8_Window_Tab@174d20a]" name="TC_01_Window" duration-ms="6205" started-at="2022-11-12T21:19:51Z" finished-at="2022-11-12T21:19:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_01_Hover_Move_Mouse -->
-        <test-method status="PASS" signature="TC_02_Click_And_Hold()[pri:0, instance:webdriver_api.Topic_7_User_Interactions@4de8b406]" name="TC_02_Click_And_Hold" duration-ms="1903" started-at="2022-11-06T21:50:24Z" finished-at="2022-11-06T21:50:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_02_Click_And_Hold -->
-        <test-method status="PASS" signature="TC_03_Click_And_Hold_Random()[pri:0, instance:webdriver_api.Topic_7_User_Interactions@4de8b406]" name="TC_03_Click_And_Hold_Random" duration-ms="478" started-at="2022-11-06T21:50:26Z" finished-at="2022-11-06T21:50:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_03_Click_And_Hold_Random -->
-        <test-method status="PASS" signature="TC_04_Double_Click()[pri:0, instance:webdriver_api.Topic_7_User_Interactions@4de8b406]" name="TC_04_Double_Click" duration-ms="21385" started-at="2022-11-06T21:50:27Z" finished-at="2022-11-06T21:50:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_04_Double_Click -->
-        <test-method status="PASS" signature="TC_05_Right_Click()[pri:0, instance:webdriver_api.Topic_7_User_Interactions@4de8b406]" name="TC_05_Right_Click" duration-ms="2225" started-at="2022-11-06T21:50:48Z" finished-at="2022-11-06T21:50:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_05_Right_Click -->
-        <test-method status="PASS" signature="TC_06_Drag_And_Drop()[pri:0, instance:webdriver_api.Topic_7_User_Interactions@4de8b406]" name="TC_06_Drag_And_Drop" duration-ms="860" started-at="2022-11-06T21:50:50Z" finished-at="2022-11-06T21:50:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_06_Drag_And_Drop -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:webdriver_api.Topic_7_User_Interactions@4de8b406]" name="afterTest" is-config="true" duration-ms="0" started-at="2022-11-06T21:50:51Z" finished-at="2022-11-06T21:50:51Z">
+        </test-method> <!-- TC_01_Window -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:webdriver_api.Topic_8_Window_Tab@174d20a]" name="afterTest" is-config="true" duration-ms="0" started-at="2022-11-12T21:19:58Z" finished-at="2022-11-12T21:19:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- webdriver_api.Topic_7_User_Interactions -->
+      </class> <!-- webdriver_api.Topic_8_Window_Tab -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

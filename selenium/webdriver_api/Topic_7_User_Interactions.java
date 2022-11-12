@@ -1,14 +1,9 @@
 package webdriver_api;
 
 import org.testng.annotations.Test;
-
-import com.thoughtworks.selenium.webdriven.commands.GetText;
-
 import org.testng.annotations.BeforeTest;
-
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -27,12 +22,10 @@ public class Topic_7_User_Interactions {
 
 	@BeforeTest
 	public void beforeTest() {
-		driver = new FirefoxDriver();
+		/*driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
-		
-		
-		
+		driver.manage().window().maximize();*/
+			
 		String projectPath = System.getProperty("user.dir");
 		System.setProperty("webdriver.chrome.driver", projectPath + "\\lib\\chromedriver.exe");
 		driver = new ChromeDriver();
@@ -150,9 +143,7 @@ public class Topic_7_User_Interactions {
 		
 		driver.switchTo().alert().accept();
 	}
-	
-	
-	
+		
 	
 	@Test
 	public void TC_06_Drag_And_Drop() throws InterruptedException {
@@ -178,6 +169,7 @@ public class Topic_7_User_Interactions {
 	
 	@AfterTest
 	public void afterTest() {
+		driver.quit();
 	
 	}
 
