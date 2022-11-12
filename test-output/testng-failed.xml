@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="webdriver_api.Topic_7_User_Interactions">
+      <class name="webdriver_api.Topic_8_Window_Tab">
         <methods>
-          <include name="beforeTest"/>
-          <include name="TC_06_Drag_And_Drop"/>
           <include name="afterTest"/>
+          <include name="TC_01_Window"/>
+          <include name="beforeTest"/>
         </methods>
-      </class> <!-- webdriver_api.Topic_7_User_Interactions -->
+      </class> <!-- webdriver_api.Topic_8_Window_Tab -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

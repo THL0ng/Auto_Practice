@@ -3,9 +3,6 @@ package webdriver_api;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
-
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
