@@ -22,9 +22,9 @@ public class Topic_8_Window_Tab_Exercise {
 	public void beforeTest() {
 		
 		
-		/*String projectPath = System.getProperty("user.dir");
+		String projectPath = System.getProperty("user.dir");
 		System.setProperty("webdriver.chrome.driver", projectPath + "\\lib\\chromedriver.exe");
-		driver = new ChromeDriver();*/
+		driver = new ChromeDriver();
 		
 		driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -32,7 +32,7 @@ public class Topic_8_Window_Tab_Exercise {
 
 	}
 
-	/*@Test
+	@Test
 	public void TC_01_Windows_Tab() throws InterruptedException {
 		driver.get("https://automationfc.github.io/basic-form/index.html");
 		
@@ -64,10 +64,10 @@ public class Topic_8_Window_Tab_Exercise {
 		
 		closeAllWindowsWithoutParent(parentID);
 		
-	}*/
+	}
 	
 	
-	/*@Test
+	@Test
 	public void TC_02_Windows_Tab() throws InterruptedException {
 		driver.get("https://skills.kynaenglish.vn/");
 		String parentID = driver.getWindowHandle();
@@ -88,10 +88,10 @@ public class Topic_8_Window_Tab_Exercise {
 		closeAllWindowsWithoutParent(parentID);
 
 	
-	}	*/
+	}	
 	
 	
-	/*@Test
+	@Test
 	public void TC_03_Windows_Tab() throws InterruptedException {
 		driver.get("http://live.techpanda.org/");
 	
@@ -122,7 +122,7 @@ public class Topic_8_Window_Tab_Exercise {
 		
 		Assert.assertTrue(driver.findElement(By.xpath("//span[text()='The comparison list was cleared.']")).isDisplayed());
 	
-	}	*/
+	}	
 	
 	
 	
