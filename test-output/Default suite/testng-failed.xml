@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="webdriver_api.Topic_8_Window_Tab_Exercise">
+      <class name="webdriver_api.Topic_9_Javascript_Executor_Exercise">
         <methods>
-          <include name="TC_04_Windows_Tab"/>
-          <include name="afterTest"/>
+          <include name="TC_04_Remove_attribute"/>
           <include name="beforeTest"/>
+          <include name="afterTest"/>
         </methods>
-      </class> <!-- webdriver_api.Topic_8_Window_Tab_Exercise -->
+      </class> <!-- webdriver_api.Topic_9_Javascript_Executor_Exercise -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
