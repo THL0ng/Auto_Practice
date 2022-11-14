@@ -67,13 +67,13 @@ public class Topic_8_Window_Tab {
 		Set <String> allWindows = driver.getWindowHandles();
 		
 		// DÙNG VÒNG LẶP DUYỆT QUA TỪNG ID
-		for (String runWindow : allWindows) {
+		for (String termID : allWindows) {
 			
 			// KIỂM TRA ID NÀO KHÁC VỚI PARENT ID THÌ SWITCH QUA
-			if (!runWindow.equals(parentID)) {
+			if (!termID.equals(parentID)) {
 				
 				// SWITCH QUA TAB/WINDOW ĐÓ
-				driver.switchTo().window(runWindow);
+				driver.switchTo().window(termID);
 				break;
 			}
 		}
