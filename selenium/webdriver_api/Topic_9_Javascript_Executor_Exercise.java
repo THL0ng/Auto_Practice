@@ -68,7 +68,7 @@ public class Topic_9_Javascript_Executor_Exercise {
 
 	}
 
-	
+	@Test
 	public void TC_01_JS() throws InterruptedException {
 		navigateToUrlByJS("http://live.techpanda.org/");
 		
@@ -113,9 +113,40 @@ public class Topic_9_Javascript_Executor_Exercise {
 
 	}
 	
+	@Test
+	public void TC_02_JS() throws InterruptedException {
+		navigateToUrlByJS("https://automationfc.github.io/html5/index.html");
+		
+		clickToElementByJS("//input[@class='btn']");
+		
+		String nameMsg = getInnerText();
+		Assert.assertFalse(nameMsg.contains("Please fill out this field"));
+		
+		
+		sendkeyToElementByJS("//input[@id='fname']", "Automation");
+		
+		clickToElementByJS("//input[@class='btn']");
+		
+		String passwordMsg = getInnerText();
+		Assert.assertFalse(passwordMsg.contains("Please fill out this field"));
+		
+		sendkeyToElementByJS("//input[@id='pass']", "123456");
+		clickToElementByJS("//input[@class='btn']");
+
+		
+		String emaildMsg = getInnerText();
+		Assert.assertFalse(emaildMsg.contains("Please fill out this field"));
+		
+		sendkeyToElementByJS("//input[@id='em']", "automation@gmail.com");
+		clickToElementByJS("//input[@class='btn']");
+		
+		String addressdMsg = getInnerText();
+		Assert.assertFalse(addressdMsg.contains("Please select an item in the list"));
+
+	}
 	
-	
-	public void TC_04_Remove_attribute() throws InterruptedException {
+	@Test
+	public void TC_03_Remove_attribute() throws InterruptedException {
 		driver.get("https://demo.guru99.com/v4/index.php");
 
 		driver.findElement(By.name("uid")).sendKeys(username);
@@ -183,7 +214,7 @@ public class Topic_9_Javascript_Executor_Exercise {
 	}
 	
 	@Test
-	public void TC_05_Create_Account() throws InterruptedException {
+	public void TC_04_Create_Account() throws InterruptedException {
 		navigateToUrlByJS("http://live.techpanda.org/");
 		
 		clickToElementByJS("//div[@id='header-account']//a[text()='My Account']");
