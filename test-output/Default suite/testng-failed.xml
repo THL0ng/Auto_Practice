@@ -5,7 +5,7 @@
     <classes>
       <class name="webdriver_api.Topic_9_Javascript_Executor_Exercise">
         <methods>
-          <include name="TC_04_Remove_attribute"/>
+          <include name="TC_02_JS"/>
           <include name="beforeTest"/>
           <include name="afterTest"/>
         </methods>

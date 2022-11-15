@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8981" started-at="2022-11-14T14:49:40Z" finished-at="2022-11-14T14:49:49Z">
+  <suite name="Default suite" duration-ms="2237" started-at="2022-11-15T08:14:33Z" finished-at="2022-11-15T08:14:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8981" started-at="2022-11-14T14:49:40Z" finished-at="2022-11-14T14:49:49Z">
+    <test name="Default test" duration-ms="2237" started-at="2022-11-15T08:14:33Z" finished-at="2022-11-15T08:14:36Z">
       <class name="webdriver_api.Topic_9_Javascript_Executor_Exercise">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:webdriver_api.Topic_9_Javascript_Executor_Exercise@643b1d11]" name="beforeTest" is-config="true" duration-ms="1670" started-at="2022-11-14T21:49:40Z" finished-at="2022-11-14T21:49:41Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:webdriver_api.Topic_9_Javascript_Executor_Exercise@643b1d11]" name="beforeTest" is-config="true" duration-ms="1538" started-at="2022-11-15T15:14:33Z" finished-at="2022-11-15T15:14:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="TC_05_Create_Account()[pri:0, instance:webdriver_api.Topic_9_Javascript_Executor_Exercise@643b1d11]" name="TC_05_Create_Account" duration-ms="7309" started-at="2022-11-14T21:49:41Z" finished-at="2022-11-14T21:49:49Z">
+        <test-method status="PASS" signature="TC_02_JS()[pri:0, instance:webdriver_api.Topic_9_Javascript_Executor_Exercise@643b1d11]" name="TC_02_JS" duration-ms="693" started-at="2022-11-15T15:14:35Z" finished-at="2022-11-15T15:14:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_05_Create_Account -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:webdriver_api.Topic_9_Javascript_Executor_Exercise@643b1d11]" name="afterTest" is-config="true" duration-ms="0" started-at="2022-11-14T21:49:49Z" finished-at="2022-11-14T21:49:49Z">
+        </test-method> <!-- TC_02_JS -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:webdriver_api.Topic_9_Javascript_Executor_Exercise@643b1d11]" name="afterTest" is-config="true" duration-ms="0" started-at="2022-11-15T15:14:36Z" finished-at="2022-11-15T15:14:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
