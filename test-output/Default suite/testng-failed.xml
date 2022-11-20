@@ -3,23 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="webdriver_api.Topic_06_Button_Radio_Checkbox_Alert_Exercise"/>
+      <class name="webdriver_api.Topic_11_Wait_Part_4_ImplicitlyWait"/>
     </classes>
   </test> <!-- Default test -->
-  <test name="Default test(failed)">
-    <classes>
-      <class name="webdriver_api.Topic_06_Button_Radio_Checkbox_Alert_Exercise">
-        <methods>
-          <include name="TC_05_Accept_Alert"/>
-          <include name="TC_06_Confirm_Alert"/>
-          <include name="afterTest"/>
-          <include name="TC_03_Default_Checkbox_RadioButton"/>
-          <include name="beforeTest"/>
-          <include name="TC_02_Default_Checkbox_RadioButton"/>
-          <include name="TC_04_Default_Checkbox_RadioButton"/>
-          <include name="TC_07_Prompt_Alert"/>
-        </methods>
-      </class> <!-- webdriver_api.Topic_06_Button_Radio_Checkbox_Alert_Exercise -->
-    </classes>
-  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
