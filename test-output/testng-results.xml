@@ -1,25 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="10" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12362" started-at="2022-11-20T10:43:06Z" finished-at="2022-11-20T10:43:18Z">
+  <suite name="Suite" duration-ms="64" started-at="2022-11-23T12:02:47Z" finished-at="2022-11-23T12:02:47Z">
     <groups>
+      <group name="pay">
+        <method signature="Part2_Group.TC_03()[pri:0, instance:testNG_Framework.Part2_Group@153f5a29]" name="TC_03" class="testNG_Framework.Part2_Group"/>
+        <method signature="Part2_Group.TC_04()[pri:0, instance:testNG_Framework.Part2_Group@153f5a29]" name="TC_04" class="testNG_Framework.Part2_Group"/>
+        <method signature="Part2_Group.TC_03()[pri:0, instance:testNG_Framework.Part2_Group@7c0e2abd]" name="TC_03" class="testNG_Framework.Part2_Group"/>
+        <method signature="Part2_Group.TC_04()[pri:0, instance:testNG_Framework.Part2_Group@7c0e2abd]" name="TC_04" class="testNG_Framework.Part2_Group"/>
+      </group> <!-- pay -->
+      <group name="user">
+        <method signature="Part2_Group.TC_01()[pri:0, instance:testNG_Framework.Part2_Group@153f5a29]" name="TC_01" class="testNG_Framework.Part2_Group"/>
+        <method signature="Part2_Group.TC_02()[pri:0, instance:testNG_Framework.Part2_Group@153f5a29]" name="TC_02" class="testNG_Framework.Part2_Group"/>
+        <method signature="Part2_Group.TC_01()[pri:0, instance:testNG_Framework.Part2_Group@7c0e2abd]" name="TC_01" class="testNG_Framework.Part2_Group"/>
+        <method signature="Part2_Group.TC_02()[pri:0, instance:testNG_Framework.Part2_Group@7c0e2abd]" name="TC_02" class="testNG_Framework.Part2_Group"/>
+      </group> <!-- user -->
+      <group name="shopping">
+        <method signature="Part2_Group.TC_05()[pri:0, instance:testNG_Framework.Part2_Group@153f5a29]" name="TC_05" class="testNG_Framework.Part2_Group"/>
+        <method signature="Part2_Group.TC_05()[pri:0, instance:testNG_Framework.Part2_Group@7c0e2abd]" name="TC_05" class="testNG_Framework.Part2_Group"/>
+      </group> <!-- shopping -->
     </groups>
-    <test name="Default test" duration-ms="12362" started-at="2022-11-20T10:43:06Z" finished-at="2022-11-20T10:43:18Z">
-      <class name="webdriver_api.Topic_11_Wait_Part_4_ImplicitlyWait">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:webdriver_api.Topic_11_Wait_Part_4_ImplicitlyWait@402f32ff]" name="beforeTest" is-config="true" duration-ms="1700" started-at="2022-11-20T17:43:06Z" finished-at="2022-11-20T17:43:08Z">
+    <test name="Run testcase on FIREFOX" duration-ms="29" started-at="2022-11-23T12:02:47Z" finished-at="2022-11-23T12:02:47Z">
+      <class name="testNG_Framework.Part2_Group">
+        <test-method status="PASS" signature="TC_01()[pri:0, instance:testNG_Framework.Part2_Group@153f5a29]" name="TC_01" duration-ms="8" started-at="2022-11-23T19:02:47Z" finished-at="2022-11-23T19:02:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="TC_05_Date_Explicit()[pri:0, instance:webdriver_api.Topic_11_Wait_Part_4_ImplicitlyWait@402f32ff]" name="TC_05_Date_Explicit" duration-ms="10659" started-at="2022-11-20T17:43:08Z" finished-at="2022-11-20T17:43:18Z">
+        </test-method> <!-- TC_01 -->
+        <test-method status="PASS" signature="TC_02()[pri:0, instance:testNG_Framework.Part2_Group@153f5a29]" name="TC_02" duration-ms="1" started-at="2022-11-23T19:02:47Z" finished-at="2022-11-23T19:02:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_05_Date_Explicit -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:webdriver_api.Topic_11_Wait_Part_4_ImplicitlyWait@402f32ff]" name="afterTest" is-config="true" duration-ms="0" started-at="2022-11-20T17:43:18Z" finished-at="2022-11-20T17:43:18Z">
+        </test-method> <!-- TC_02 -->
+        <test-method status="PASS" signature="TC_03()[pri:0, instance:testNG_Framework.Part2_Group@153f5a29]" name="TC_03" duration-ms="1" started-at="2022-11-23T19:02:47Z" finished-at="2022-11-23T19:02:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- webdriver_api.Topic_11_Wait_Part_4_ImplicitlyWait -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- TC_03 -->
+        <test-method status="PASS" signature="TC_04()[pri:0, instance:testNG_Framework.Part2_Group@153f5a29]" name="TC_04" duration-ms="0" started-at="2022-11-23T19:02:47Z" finished-at="2022-11-23T19:02:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_04 -->
+        <test-method status="PASS" signature="TC_05()[pri:0, instance:testNG_Framework.Part2_Group@153f5a29]" name="TC_05" duration-ms="1" started-at="2022-11-23T19:02:47Z" finished-at="2022-11-23T19:02:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_05 -->
+      </class> <!-- testNG_Framework.Part2_Group -->
+    </test> <!-- Run testcase on FIREFOX -->
+    <test name="Run testcase on CHROME" duration-ms="11" started-at="2022-11-23T12:02:47Z" finished-at="2022-11-23T12:02:47Z">
+      <class name="testNG_Framework.Part2_Group">
+        <test-method status="PASS" signature="TC_01()[pri:0, instance:testNG_Framework.Part2_Group@7c0e2abd]" name="TC_01" duration-ms="1" started-at="2022-11-23T19:02:47Z" finished-at="2022-11-23T19:02:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01 -->
+        <test-method status="PASS" signature="TC_02()[pri:0, instance:testNG_Framework.Part2_Group@7c0e2abd]" name="TC_02" duration-ms="0" started-at="2022-11-23T19:02:47Z" finished-at="2022-11-23T19:02:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_02 -->
+        <test-method status="PASS" signature="TC_03()[pri:0, instance:testNG_Framework.Part2_Group@7c0e2abd]" name="TC_03" duration-ms="1" started-at="2022-11-23T19:02:47Z" finished-at="2022-11-23T19:02:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_03 -->
+        <test-method status="PASS" signature="TC_04()[pri:0, instance:testNG_Framework.Part2_Group@7c0e2abd]" name="TC_04" duration-ms="1" started-at="2022-11-23T19:02:47Z" finished-at="2022-11-23T19:02:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_04 -->
+        <test-method status="PASS" signature="TC_05()[pri:0, instance:testNG_Framework.Part2_Group@7c0e2abd]" name="TC_05" duration-ms="1" started-at="2022-11-23T19:02:47Z" finished-at="2022-11-23T19:02:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_05 -->
+      </class> <!-- testNG_Framework.Part2_Group -->
+    </test> <!-- Run testcase on CHROME -->
+  </suite> <!-- Suite -->
 </testng-results>
